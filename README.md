@@ -31,7 +31,7 @@
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </a>
 &nbsp;
-<a href="https://cyan-daimao.github.io">
+<a href="https://cyan-daimao.github.io/cyan-daimao/">
   <img src="https://img.shields.io/badge/Portfolio-6366F1?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio" />
 </a>
 
@@ -334,7 +334,7 @@ sequenceDiagram
 
 [![GitHub](https://img.shields.io/badge/GitHub-cyan--daimao-181717?style=for-the-badge&logo=github)](https://github.com/cyan-daimao)
 &nbsp;
-[![Portfolio](https://img.shields.io/badge/个人主页-cyan--daimao.github.io-6366F1?style=for-the-badge&logo=githubpages)](https://cyan-daimao.github.io)
+[![Portfolio](https://img.shields.io/badge/个人主页-cyan--daimao.github.io-6366F1?style=for-the-badge&logo=githubpages)](https://cyan-daimao.github.io/cyan-daimao/)
 &nbsp;
 [![Gmail](https://img.shields.io/badge/Gmail-daimao2817@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:daimao2817@gmail.com)
 &nbsp;
