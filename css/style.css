@@ -743,10 +743,6 @@ img {
     margin-bottom: 3rem;
 }
 
-.project-card:last-child:nth-child(odd) {
-    grid-column: 2;
-}
-
 .project-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -1257,12 +1253,6 @@ img {
 
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .project-card:last-child:nth-child(odd) {
-        grid-column: 1 / -1;
-        max-width: calc(50% - 0.75rem);
-        margin: 0 auto;
     }
 
     .stats-grid {
