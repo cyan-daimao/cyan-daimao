@@ -284,25 +284,31 @@ sequenceDiagram
 
 ## 🛠️ 技术栈
 
-### 数据存储 & 计算
+### 数据湖 & 存储
 <p>
   <img src="https://img.shields.io/badge/Apache%20Iceberg-7B42BC?style=flat-square&logo=apache&logoColor=white" alt="Iceberg" />
-  <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Spark" />
-  <img src="https://img.shields.io/badge/Apache%20Flink-E6526F?style=flat-square&logo=apacheflink&logoColor=white" alt="Flink" />
-  <img src="https://img.shields.io/badge/StarRocks-00B4D8?style=flat-square&logo=starrocks&logoColor=white" alt="StarRocks" />
+  <img src="https://img.shields.io/badge/Iceberg%20REST%20Catalog-6366F1?style=flat-square&logo=apache&logoColor=white" alt="REST Catalog" />
   <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
-  <img src="https://img.shields.io/badge/Debezium-F45C3E?style=flat-square&logo=debezium&logoColor=white" alt="Debezium" />
-</p>
-
-### 元数据 & 治理
-<p>
-  <img src="https://img.shields.io/badge/Gravitino-FF6B6B?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PC9zdmc+&logoColor=white" alt="Gravitino" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
 </p>
 
-### 后端服务
+### 实时计算 & CDC
+<p>
+  <img src="https://img.shields.io/badge/Apache%20Flink-E6526F?style=flat-square&logo=apacheflink&logoColor=white" alt="Flink" />
+  <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
+  <img src="https://img.shields.io/badge/Debezium-F45C3E?style=flat-square&logo=debezium&logoColor=white" alt="Debezium" />
+  <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Spark" />
+  <img src="https://img.shields.io/badge/StarRocks-00B4D8?style=flat-square&logo=starrocks&logoColor=white" alt="StarRocks" />
+</p>
+
+### 元数据 & 治理
+<p>
+  <img src="https://img.shields.io/badge/Gravitino-FF6B6B?style=flat-square&logo=apache&logoColor=white" alt="Gravitino" />
+  <img src="https://img.shields.io/badge/Open%20Lineage-6366F1?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PC9zdmc+&logoColor=white" alt="OpenLineage" />
+</p>
+
+### 后端 & 前端
 <p>
   <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
@@ -316,33 +322,9 @@ sequenceDiagram
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Apache%20Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white" alt="Maven" />
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
 </p>
-
----
-
-## 📊 GitHub 统计
-
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=cyan-daimao&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&card_width=420" alt="GitHub Stats" />
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyan-daimao&layout=compact&theme=tokyonight&hide_border=true&card_width=320&langs_count=6" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
-
-  <br>
-
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cyan-daimao&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="85%" />
-
-  <br><br>
-
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=cyan-daimao&theme=tokyo-night&hide_border=true&area=true" alt="Contribution Graph" width="95%" />
-</div>
 
 ---
 
@@ -353,6 +335,10 @@ sequenceDiagram
 [![GitHub](https://img.shields.io/badge/GitHub-cyan--daimao-181717?style=for-the-badge&logo=github)](https://github.com/cyan-daimao)
 &nbsp;
 [![Portfolio](https://img.shields.io/badge/个人主页-cyan--daimao.github.io-6366F1?style=for-the-badge&logo=githubpages)](https://cyan-daimao.github.io)
+&nbsp;
+[![Gmail](https://img.shields.io/badge/Gmail-daimao2817@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:daimao2817@gmail.com)
+&nbsp;
+[![Email](https://img.shields.io/badge/163-a1624000875@163.com-FC3F00?style=for-the-badge&logo=mail.ru&logoColor=white)](mailto:a1624000875@163.com)
 
 </div>
 
