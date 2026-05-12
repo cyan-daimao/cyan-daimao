@@ -738,9 +738,13 @@ img {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     margin-bottom: 3rem;
+}
+
+.project-card:last-child:nth-child(odd) {
+    grid-column: 2;
 }
 
 .project-card {
@@ -1249,6 +1253,16 @@ img {
 @media (max-width: 1024px) {
     .about-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        max-width: calc(50% - 0.75rem);
+        margin: 0 auto;
     }
 
     .stats-grid {

@@ -227,73 +227,85 @@
                 <div class="section-line"></div>
             </div>
             <div class="projects-grid">
-                <!-- 项目卡片1 -->
+                <!-- 项目卡片1: 数据仓库 -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
-                            <i class="fas fa-globe"></i>
+                            <i class="fas fa-database"></i>
                         </div>
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" target="_blank" class="project-link" title="查看代码">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" target="_blank" class="project-link" title="在线预览">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Awesome Web App</h3>
-                        <p class="project-desc">基于 React 和 Node.js 构建的现代化 Web 应用，支持实时协作、数据可视化和响应式设计。</p>
+                        <h3 class="project-title">rustfs + iceberg + restcatalog</h3>
+                        <p class="project-desc">湖仓一体存储引擎，存算分离架构。RustFS 自研对象存储 + Iceberg 开放表格式 + REST Catalog 统一元数据接口。</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">WebSocket</span>
-                        </div>
-                        <div class="project-stats">
-                            <span><i class="fas fa-star"></i> 1.2k</span>
-                            <span><i class="fas fa-code-branch"></i> 180</span>
+                            <span class="tech-tag">Rust</span>
+                            <span class="tech-tag">Iceberg</span>
+                            <span class="tech-tag">REST Catalog</span>
+                            <span class="tech-tag">对象存储</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 项目卡片2 -->
+                <!-- 项目卡片2: cyan-dataman -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
-                            <i class="fas fa-robot"></i>
+                            <i class="fas fa-stream"></i>
                         </div>
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" target="_blank" class="project-link" title="查看代码">
+                                <a href="https://github.com/cyan-daimao/cyan-dataman" target="_blank" class="project-link" title="查看代码">
                                     <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" target="_blank" class="project-link" title="在线预览">
-                                    <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">AI Chatbot Platform</h3>
-                        <p class="project-desc">智能对话平台，集成多种大语言模型 API，支持自定义知识库和流式响应。</p>
+                        <h3 class="project-title">cyan-dataman</h3>
+                        <p class="project-desc">数据采集 + 元数据平台。CDC 数据入湖链路（Debezium + Kafka + Flink），以及基于 Gravitino + Iceberg 的元数据治理。</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">OpenAI</span>
-                            <span class="tech-tag">Redis</span>
-                        </div>
-                        <div class="project-stats">
-                            <span><i class="fas fa-star"></i> 856</span>
-                            <span><i class="fas fa-code-branch"></i> 120</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Flink</span>
+                            <span class="tech-tag">Kafka</span>
+                            <span class="tech-tag">Gravitino</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 项目卡片3 -->
+                <!-- 项目卡片3: cyan-datagateway -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/cyan-daimao/cyan-datagateway" target="_blank" class="project-link" title="查看代码">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">cyan-datagateway</h3>
+                        <p class="project-desc">数据网关，StarRocks / Spark / Flink 的统一 SQL 执行入口。智能路由、资源分配、SQL 解析增强。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">StarRocks</span>
+                            <span class="tech-tag">Spark</span>
+                            <span class="tech-tag">SQL 路由</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片4: cyan-dataauth -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
@@ -301,60 +313,98 @@
                         </div>
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" target="_blank" class="project-link" title="查看代码">
+                                <a href="https://github.com/cyan-daimao/cyan-dataauth" target="_blank" class="project-link" title="查看代码">
                                     <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" target="_blank" class="project-link" title="在线预览">
-                                    <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Secure Auth System</h3>
-                        <p class="project-desc">企业级身份认证系统，支持 OAuth2、SSO、多因素认证和权限管理。</p>
+                        <h3 class="project-title">cyan-dataauth</h3>
+                        <p class="project-desc">数据权限中心，提供表级、行级、列级权限控制。对外权限申请，对内 SQL 增强服务。</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Go</span>
-                            <span class="tech-tag">JWT</span>
-                            <span class="tech-tag">OAuth2</span>
-                            <span class="tech-tag">gRPC</span>
-                        </div>
-                        <div class="project-stats">
-                            <span><i class="fas fa-star"></i> 643</span>
-                            <span><i class="fas fa-code-branch"></i> 95</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">权限管控</span>
+                            <span class="tech-tag">SQL 改写</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 项目卡片4 -->
+                <!-- 项目卡片5: cyan-dataworks -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-clock"></i>
                         </div>
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" target="_blank" class="project-link" title="查看代码">
+                                <a href="https://github.com/cyan-daimao/cyan-dataworks" target="_blank" class="project-link" title="查看代码">
                                     <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" target="_blank" class="project-link" title="在线预览">
-                                    <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Data Dashboard</h3>
-                        <p class="project-desc">实时数据可视化仪表盘，支持多种图表类型、数据导出和自定义报表。</p>
+                        <h3 class="project-title">cyan-dataworks</h3>
+                        <p class="project-desc">调度系统（规划中）。Spark / Flink 作业编排调度，依赖表 + 版本号记录血缘，Agent 智能运维。</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">ECharts</span>
-                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spark</span>
+                            <span class="tech-tag">Flink</span>
+                            <span class="tech-tag">数据血缘</span>
                         </div>
-                        <div class="project-stats">
-                            <span><i class="fas fa-star"></i> 512</span>
-                            <span><i class="fas fa-code-branch"></i> 76</span>
+                    </div>
+                </div>
+
+                <!-- 项目卡片6: cyan-datametric -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/cyan-daimao/cyan-datametric" target="_blank" class="project-link" title="查看代码">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">cyan-datametric</h3>
+                        <p class="project-desc">指标平台，数据应用服务的基石。指标维度管理、DSL 查询语言，通过关联关系图谱实现智能聚合。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">DSL</span>
+                            <span class="tech-tag">指标聚合</span>
+                            <span class="tech-tag">图谱计算</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片7: cyan-databi -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/cyan-daimao/cyan-databi" target="_blank" class="project-link" title="查看代码">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">cyan-databi</h3>
+                        <p class="project-desc">智能分析平台，基于指标平台创建图表，支持 ChatBI 自然语言生成图表。图表 + 布局组成数据看板。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">ChatBI</span>
+                            <span class="tech-tag">数据看板</span>
                         </div>
                     </div>
                 </div>
