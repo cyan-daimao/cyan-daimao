@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub - 个人主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">Loading<span>.</span><span>.</span><span>.</span></p>
+        </div>
+    </div>
+
+    <!-- 背景粒子 -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fab fa-github"></i>
+                <span>YourName</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#stats" class="nav-link">统计</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="切换菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页英雄区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <div class="avatar-wrapper">
+                    <img src="https://avatars.githubusercontent.com/u/1?v=4" alt="头像" class="avatar-img">
+                    <div class="avatar-ring"></div>
+                </div>
+                <div class="status-indicator" title="在线">
+                    <span class="status-dot"></span>
+                </div>
+            </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">YourName</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="typing-text" data-texts='["全栈开发者", "开源贡献者", "技术博主", "终身学习者"]'></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-desc">
+                热爱编程，专注于构建优雅且高性能的 Web 应用。<br>
+                开源 enthusiast，喜欢探索新技术并分享学习心得。
+            </p>
+            <div class="hero-buttons">
+                <a href="https://github.com/yourusername" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i>
+                    我的 GitHub
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fas fa-rocket"></i>
+                    查看项目
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/yourusername" target="_blank" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" class="social-link" title="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:your.email@example.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>向下滚动</span>
+        </div>
+    </section>
+
+    <!-- 关于区域 -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ABOUT ME</span>
+                <h2 class="section-title">关于我</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>代码爱好者</h3>
+                    <p>拥有多年全栈开发经验，精通前后端技术栈。喜欢编写干净、可维护的代码，追求最佳实践。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>终身学习</h3>
+                    <p>技术日新月异，保持学习的热情是我的信条。定期阅读技术文档，参与线上课程，不断提升自我。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>开源贡献</h3>
+                    <p>积极参与开源社区，为多个知名项目贡献代码。相信开源的力量，乐于分享和协作。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>问题解决</h3>
+                    <p>善于分析复杂问题，提出创新解决方案。享受攻克技术难题带来的成就感。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能区域 -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">SKILLS</span>
+                <h2 class="section-title">技术栈</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-laptop-code"></i>
+                        前端开发
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="95">HTML5</span>
+                        <span class="skill-tag" data-level="92">CSS3</span>
+                        <span class="skill-tag" data-level="90">JavaScript</span>
+                        <span class="skill-tag" data-level="88">TypeScript</span>
+                        <span class="skill-tag" data-level="85">React</span>
+                        <span class="skill-tag" data-level="82">Vue.js</span>
+                        <span class="skill-tag" data-level="80">Next.js</span>
+                        <span class="skill-tag" data-level="78">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-server"></i>
+                        后端开发
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="88">Node.js</span>
+                        <span class="skill-tag" data-level="85">Python</span>
+                        <span class="skill-tag" data-level="82">Go</span>
+                        <span class="skill-tag" data-level="80">PostgreSQL</span>
+                        <span class="skill-tag" data-level="78">MongoDB</span>
+                        <span class="skill-tag" data-level="85">Redis</span>
+                        <span class="skill-tag" data-level="80">Docker</span>
+                        <span class="skill-tag" data-level="75">Kubernetes</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-tools"></i>
+                        工具 & 其他
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="90">Git</span>
+                        <span class="skill-tag" data-level="88">VS Code</span>
+                        <span class="skill-tag" data-level="85">Linux</span>
+                        <span class="skill-tag" data-level="82">CI/CD</span>
+                        <span class="skill-tag" data-level="80">Figma</span>
+                        <span class="skill-tag" data-level="78">AWS</span>
+                        <span class="skill-tag" data-level="75">GraphQL</span>
+                        <span class="skill-tag" data-level="72">WebSocket</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目区域 -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PROJECTS</span>
+                <h2 class="section-title">精选项目</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- 项目卡片1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link" title="查看代码">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link" title="在线预览">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Awesome Web App</h3>
+                        <p class="project-desc">基于 React 和 Node.js 构建的现代化 Web 应用，支持实时协作、数据可视化和响应式设计。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 1.2k</span>
+                            <span><i class="fas fa-code-branch"></i> 180</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link" title="查看代码">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link" title="在线预览">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AI Chatbot Platform</h3>
+                        <p class="project-desc">智能对话平台，集成多种大语言模型 API，支持自定义知识库和流式响应。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 856</span>
+                            <span><i class="fas fa-code-branch"></i> 120</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link" title="查看代码">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link" title="在线预览">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Secure Auth System</h3>
+                        <p class="project-desc">企业级身份认证系统，支持 OAuth2、SSO、多因素认证和权限管理。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">OAuth2</span>
+                            <span class="tech-tag">gRPC</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 643</span>
+                            <span><i class="fas fa-code-branch"></i> 95</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link" title="查看代码">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link" title="在线预览">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Data Dashboard</h3>
+                        <p class="project-desc">实时数据可视化仪表盘，支持多种图表类型、数据导出和自定义报表。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">ECharts</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 512</span>
+                            <span><i class="fas fa-code-branch"></i> 76</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="https://github.com/yourusername?tab=repositories" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    查看更多项目
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 统计区域 -->
+    <section id="stats" class="section stats">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">STATISTICS</span>
+                <h2 class="section-title">GitHub 统计</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-number" data-target="42">0</div>
+                    <div class="stat-label">公开仓库</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-number" data-target="2500">0</div>
+                    <div class="stat-label">获得星标</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="stat-number" data-target="350">0</div>
+                    <div class="stat-label">代码复刻</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="1200">0</div>
+                    <div class="stat-label">关注者</div>
+                </div>
+            </div>
+            <div class="stats-charts">
+                <div class="chart-card">
+                    <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" loading="lazy">
+                </div>
+                <div class="chart-card">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" loading="lazy">
+                </div>
+            </div>
+            <div class="stats-extra">
+                <div class="chart-card full-width">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=tokyonight&hide_border=true" alt="GitHub Streak" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系区域 -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CONTACT</span>
+                <h2 class="section-title">联系我</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>让我们合作吧！</h3>
+                    <p>如果你有任何项目想法、技术问题，或者只是想聊聊天，欢迎随时联系我。</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-label">邮箱</span>
+                                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-label">GitHub</span>
+                                <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-label">Twitter</span>
+                                <a href="https://twitter.com/yourusername" target="_blank">@yourusername</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-label">位置</span>
+                                <span>Earth 🌍</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">你的名字</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">电子邮箱</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">主题</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+                        <label for="message">留言内容</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        发送消息
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <i class="fab fa-github"></i>
+                        <span>YourName</span>
+                    </a>
+                    <p>用代码构建未来，用热情驱动创新。</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-group">
+                        <h4>导航</h4>
+                        <a href="#home">首页</a>
+                        <a href="#about">关于</a>
+                        <a href="#projects">项目</a>
+                        <a href="#contact">联系</a>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>链接</h4>
+                        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                        <a href="https://dev.to/yourusername" target="_blank">Dev.to</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> Made with <i class="fas fa-heart"></i> by YourName</p>
+                <p class="footer-year"> 2024 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部 -->
+    <button class="back-to-top" id="backToTop" aria-label="回到顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
