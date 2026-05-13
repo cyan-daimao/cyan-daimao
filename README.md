@@ -339,6 +339,8 @@ sequenceDiagram
 [![Gmail](https://img.shields.io/badge/Gmail-daimao2817@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:daimao2817@gmail.com)
 &nbsp;
 [![Email](https://img.shields.io/badge/163-a1624000875@163.com-FC3F00?style=for-the-badge&logo=mail.ru&logoColor=white)](mailto:a1624000875@163.com)
+&nbsp;
+[![WeChat](https://img.shields.io/badge/微信-DAIMAO500-07C160?style=for-the-badge&logo=wechat&logoColor=white)](https://weixin.qq.com)
 
 </div>
 
