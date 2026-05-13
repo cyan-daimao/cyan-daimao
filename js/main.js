@@ -352,6 +352,22 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
+        // 项目卡片图片区域点击跳转（整个图标区域都可点击）
+        document.querySelectorAll('.project-card').forEach(card => {
+            const projectLink = card.querySelector('.project-link');
+            const projectImage = card.querySelector('.project-image');
+            if (projectLink && projectImage) {
+                projectImage.addEventListener('click', (e) => {
+                    // 如果点击的是 project-link 本身或其子元素，让默认链接行为处理
+                    if (e.target.closest('.project-link')) {
+                        return;
+                    }
+                    window.open(projectLink.href, '_blank');
+                });
+                projectImage.style.cursor = 'pointer';
+            }
+        });
+
         // 联系表单
         if (contactForm) {
             contactForm.addEventListener('submit', handleFormSubmit);
